@@ -1,0 +1,16 @@
+# Combines PostGIS (base image) with pgvector (installed via the official
+# PGDG apt repository) on top of postgres:17 / Debian bookworm.
+FROM postgis/postgis:17-3.4
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends ca-certificates gnupg lsb-release curl \
+    && install -d /usr/share/postgresql-common/pgdg \
+    && curl -o /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc --fail \
+         https://www.postgresql.org/media/keys/ACCC4CF8.asc \
+    && echo "deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] \
+https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" \
+         > /etc/apt/sources.list.d/pgdg.list \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends postgresql-17-pgvector postgresql-17-pgrouting \
+    && apt-get purge -y --auto-remove ca-certificates gnupg lsb-release curl \
+    && rm -rf /var/lib/apt/lists/*

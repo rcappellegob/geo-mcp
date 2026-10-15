@@ -1,0 +1,14 @@
+podman stop geo-mcp
+podman rm geo-mcp
+
+podman build -t geo-mcp:latest -f Containerfile .
+
+
+podman run -d --name geo-mcp \
+  --network geo-net \
+  -p 8090:8090 \
+  -v /srv/resources/urbis:/srv/resources/urbis:Z \
+  -v /srv/geo-mcp/.env:/srv/geo-mcp/.env:Z,ro \
+  -v /srv/logs/geo-mcp:/srv/logs/geo-mcp:Z \
+  geo-mcp:latest
+

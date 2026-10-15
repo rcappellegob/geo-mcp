@@ -1,0 +1,18 @@
+# --- MCP server ---
+mcp[cli]>=1.2,<2.0  # mcp 2.0 renamed FastMCP -> MCPServer; app/main.py uses the v1 API
+fastmcp>=0.4
+pydantic>=2
+
+# --- HTTP / env ---
+requests>=2.31
+python-dotenv>=1.0
+
+# --- Database ---
+psycopg2-binary>=2.9
+SQLAlchemy>=2.0
+GeoAlchemy2>=0.15
+
+# --- Geospatial (sync_urbis.py: GDAL-free via pyogrio's bundled build) ---
+geopandas>=1.0
+pyogrio>=0.9
+pyproj>=3.6

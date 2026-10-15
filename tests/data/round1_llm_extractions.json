@@ -1,0 +1,482 @@
+[
+ {
+  "id": "1",
+  "prompt": "potholes near highroad",
+  "extraction": {
+   "relationship": "NEAR",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "highroad",
+     "type": "STREET",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2",
+  "prompt": "potholes on avenue louise",
+  "extraction": {
+   "relationship": "ON",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "avenue louise",
+     "type": "STREET",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "3",
+  "prompt": "Give me the problematic drains between chien vert and the stocklet palace",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "chien vert",
+     "type": "STREET",
+     "role": "start"
+    },
+    {
+     "text": "stocklet palace",
+     "type": "POI",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "4",
+  "prompt": "what is the capital of Belgium?",
+  "extraction": null
+ },
+ {
+  "id": "5",
+  "prompt": "potholes between avenue louise and rue de la loi",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "avenue louise",
+     "type": "STREET",
+     "role": "start"
+    },
+    {
+     "text": "rue de la loi",
+     "type": "STREET",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "6",
+  "prompt": "what is the road quality between on Marcel thiry between number 52 and Theodere Decuyper.",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Marcel Thiry 52",
+     "type": "ADDRESS",
+     "role": "start"
+    },
+    {
+     "text": "Theodere Decuyper",
+     "type": "STREET",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "7",
+  "prompt": "Give me all objects in the zone meiser.",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "zone meiser",
+     "type": "POI",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "8",
+  "prompt": "Give all pedestrian crossings on regional roads in Etterbeek.",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "regional roads",
+     "type": "STREET",
+     "role": "anchor"
+    },
+    {
+     "text": "Etterbeek",
+     "type": "MUNICIPALITY",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "9",
+  "prompt": "Geef me de verkeerslichten op de ninoofsesteenweg tussen de ring en weststation",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "ninoofsesteenweg",
+     "type": "STREET",
+     "role": "anchor"
+    },
+    {
+     "text": "ring",
+     "type": "POI",
+     "role": "start"
+    },
+    {
+     "text": "weststation",
+     "type": "POI",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "10",
+  "prompt": "Maak een buffer van 500m rond turn & taxis",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": 500,
+   "entities": [
+    {
+     "text": "turn & taxis",
+     "type": "POI",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "11",
+  "prompt": "Geef me de zone vana de E40",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "E40",
+     "type": "STREET",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "12",
+  "prompt": "Je veux connaitre les arbre autour de la ligne de tram 8 a oudergem",
+  "extraction": {
+   "relationship": "NEAR",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "ligne de tram 8",
+     "type": "TRANSIT_LINE",
+     "role": "anchor"
+    },
+    {
+     "text": "Ouderkerken",
+     "type": "MUNICIPALITY",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "13",
+  "prompt": "Donne moi les voirie du quartier Murtsaard",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Murtsaard",
+     "type": "MUNICIPALITY",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "14",
+  "prompt": "Donne moi les trottoir du cote de rue van Aa entre le numéro 48 et 82",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "rue van Aa",
+     "type": "STREET",
+     "role": "anchor"
+    },
+    {
+     "text": "rue van Aa 48",
+     "type": "ADDRESS",
+     "role": "start"
+    },
+    {
+     "text": "rue van Aa 82",
+     "type": "ADDRESS",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "15",
+  "prompt": "Ou sont les panneaux de signalisation au Square de Meeus.",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Square de Meeus",
+     "type": "POI",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "16",
+  "prompt": "L'avenue de jette avec un tram",
+  "extraction": {
+   "relationship": "WITHIN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Avenue de Jette",
+     "type": "STREET",
+     "role": "anchor"
+    },
+    {
+     "text": "tram",
+     "type": "TRANSIT_LINE",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "17",
+  "prompt": "Le rond point churchil",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "rond point churchil",
+     "type": "POI",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "18",
+  "prompt": "Entre la maison communal de Woluwe saint pierre et l'avenue tervuren.",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "maison communal de Woluwe saint pierre",
+     "type": "POI",
+     "role": "start"
+    },
+    {
+     "text": "Avenue Tervuren",
+     "type": "STREET",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "19",
+  "prompt": "Edmont machtens",
+  "extraction": null
+ },
+ {
+  "id": "20",
+  "prompt": "Kasteellaan tussen basilieklaan en de Edouard Bènèslaan",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Kasteellaan",
+     "type": "STREET",
+     "role": "start"
+    },
+    {
+     "text": "basilieklaan",
+     "type": "STREET",
+     "role": "end"
+    },
+    {
+     "text": "Edouard Bènèslaan",
+     "type": "STREET",
+     "role": "via"
+    }
+   ]
+  }
+ },
+ {
+  "id": "21",
+  "prompt": "Spoorweg tussen station Jette en bockstael",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "station Jette",
+     "type": "TRANSIT_STOP",
+     "role": "start"
+    },
+    {
+     "text": "Bockstael",
+     "type": "STREET",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "22",
+  "prompt": "Antoine Baeckstraat tussen nummer 90 en 29",
+  "extraction": {
+   "relationship": "BETWEEN",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Antoine Baeckstraat 90",
+     "type": "ADDRESS",
+     "role": "start"
+    },
+    {
+     "text": "Antoine Baeckstraat 29",
+     "type": "ADDRESS",
+     "role": "end"
+    }
+   ]
+  }
+ },
+ {
+  "id": "23",
+  "prompt": "Voirie de Rue Stuyvenbergh, 29  à Rue Théophile De Baisieux, 134 - Jette",
+  "extraction": {
+   "relationship": "FROM_TO",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Rue Stuyvenbergh, 29",
+     "type": "ADDRESS",
+     "role": "start"
+    },
+    {
+     "text": "Rue Théophile De Baisieux, 134",
+     "type": "ADDRESS",
+     "role": "end"
+    },
+    {
+     "text": "Jette",
+     "type": "MUNICIPALITY",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "24",
+  "prompt": "Square Eugène Plasky à Place de la Patrie via Place Meiser",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Square Eugène Plasky",
+     "type": "POI",
+     "role": "start"
+    },
+    {
+     "text": "Place de la Patrie",
+     "type": "POI",
+     "role": "end"
+    },
+    {
+     "text": "Place Meiser",
+     "type": "POI",
+     "role": "via"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25",
+  "prompt": "Les voiries en bonne état à Berchem.",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Berchem",
+     "type": "MUNICIPALITY",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26",
+  "prompt": "La grand place.",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "La Grand Place",
+     "type": "POI",
+     "role": "anchor"
+    }
+   ]
+  }
+ },
+ {
+  "id": "27",
+  "prompt": "Rue de la loi.",
+  "extraction": {
+   "relationship": "NONE",
+   "distance_meters": null,
+   "entities": [
+    {
+     "text": "Rue de la loi",
+     "type": "STREET",
+     "role": "anchor"
+    }
+   ]
+  }
+ }
+]
